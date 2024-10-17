@@ -3,5 +3,7 @@
 
 # 配置你的信息
 # 在 drcom_xzmu_wireless.py 里配置你的凭证
+```python
 stu_number = "学号"
 stu_passwd = "密码"
+```
