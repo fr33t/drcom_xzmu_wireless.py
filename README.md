@@ -15,3 +15,17 @@ pip install requests
 stu_number = "学号"
 stu_passwd = "密码"
 ```
+
+## win版
+编辑 drcom_xzmu_wireless_4win.py
+
+安装依赖 requirements.txt
+
+```cmd
+pyinstaller -F -w --hidden-import plyer.platforms.win.notification .\drcom_xzmu_wireless_4win.py
+```
+
+生成dist/xx.exe
+
+拷贝到
+win+R 输入shell:startup
