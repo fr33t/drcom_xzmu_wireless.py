@@ -19,7 +19,9 @@ def get_login_config():
     except:
         return {}
 
-    redirect_url = set(re.findall('href="(.*?)"',rq.get(respone.text))).pop()
+
+    redirect_url = set(re.findall('href="(.*?)"',respone.text)).pop()
+    print(redirect_url)
     redirect_url = urllib.parse.unquote(redirect_url)
     if "?w" not in redirect_url: 
         return None
