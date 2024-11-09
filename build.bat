@@ -1,0 +1,1 @@
+pyinstaller -F -w --hidden-import plyer.platforms.win.notification .\drcom_xzmu_wireless_4win.py
